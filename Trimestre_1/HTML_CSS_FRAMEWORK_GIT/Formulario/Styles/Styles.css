@@ -1,34 +1,32 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    padding: 0;
     background-image: url(../Images/Fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.Caja-Formulario {
-    text-align: center;
-    background-color: rgb(231, 233, 243);
-    width: 350px;
-    height: 420px;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding-top: 25px;
+nav {
+    --bs-breadcrumb-divider: '>';
 }
 
-h1 {
-    font-size: 20px;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
-input[type=text], input[type=number], input[type=email] {
-    margin-bottom: 20px;
-    margin-top: 10PX;
-    border: 0;
-    border-bottom: 2px solid rgb(76, 90, 216);
-    outline: 0;
-    font-size: 16px;
-    color: rgb(80,80,80);
-    width: 260px;
-    height: 25px;
+input[type=number] {
+    appearance: none;
+    -moz-appearance:textfield; 
+}
+
+.dollar {
+    height: 58px;
+}
+
+.form-check-label , .form-check-input {
+    font-size: 18px;
+
 }
