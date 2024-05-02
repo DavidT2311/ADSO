@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina principal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <link rel="shortcut icon" href="Images/Sena.png" />
+    <title>Informacion personal</title>
 </head>
+
 <body>
-    
+    <div class="container text-center mt-5">
+        <form id="informacion-personal" action="Experiencia_Educacion.html">
+            <div class="row justify-content-start offset-md-3 pt-4 bg-dark-subtle w-50 shadow-lg">
+                <h2 class="col-md-6 offset-md-3 mx-auto mb-4 fw-bold border border-success border-3 bg-success-subtle w-75">
+                    Informacion personal
+                </h2>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active text-success-emphasis">Informacion personal</li>
+                    </ol>
+                </nav>
 
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="text" class="form-control mb-3 shadow" id="nombre" placeholder="" required />
+                    <label for="nombre" class="px-4">Nombre completo</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="email" class="form-control mb-3 shadow" id="email" placeholder="" required />
+                    <label for="email" class="px-4">Correo</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="number" class="form-control mb-3 shadow" id="telefono" placeholder="" required />
+                    <label for="telefono" class="px-4">Telefono</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="number" class="form-control mb-3 shadow" id="postal" placeholder="" />
+                    <label for="postal" class="px-4">Postal</label>
+                </div>
+                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow">Siguiente</button>
+            </div>
+        </form>
+    </div>
 
+    <script src="Styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('informacion-personal').addEventListener('submit', function(event) {
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+            var telefono = document.getElementById('telefono').value;
+            var postal = document.getElementById('postal').value;
+
+            if (!nombre || !email || !telefono) {
+                alert('Por favor, completa todos los campos obligatorios.');
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
+
 </html>
