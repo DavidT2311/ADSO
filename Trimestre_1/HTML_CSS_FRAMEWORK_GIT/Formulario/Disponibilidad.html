@@ -12,7 +12,7 @@
 
 <body>
     <div class="container text-center mt-5">
-        <form action="">
+        <form action="Expectativas.html" id="disponibilidad">
             <div class="row justify-content-start offset-md-3 pt-4 bg-dark-subtle w-50 shadow-lg">
                 <h2 class="col-md-6 offset-md-3 mx-auto mb-4 fw-bold border border-success border-3 bg-success-subtle w-75">
                     Disponibilidad
@@ -33,27 +33,25 @@
                 </nav>
 
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="number" class="form-control mb-3 shadow" id="" placeholder="" required />
-                    <label for="" class="px-4">Disponibilidad semanal(Horas por semana)</label>
+                    <input type="number" class="form-control mb-3 shadow" id="disponibilidad_semanal" placeholder="" required/>
+                    <label for="disponibilidad_semanal" class="px-4">Disponibilidad semanal(Horas por semana)</label>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="date" class="form-control mb-3 shadow" id="" placeholder="" required />
-                    <label for="" class="px-4">Fecha de inicio disponibles para el proyecto</label>
+                    <input type="date" class="form-control mb-3 shadow" id="fecha_inicio" placeholder="" required/>
+                    <label for="fecha_inicio" class="px-4">Fecha de inicio disponibles para el proyecto</label>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="date" class="form-control mb-3 shadow" id="" placeholder="" required />
-                    <label for="" class="px-4">Fecha de finalizacion disponibles para el proyecto</label>
+                    <input type="date" class="form-control mb-3 shadow" id="fecha_fin" placeholder="" required/>
+                    <label for="fecha_fin" class="px-4">Fecha de finalizacion disponibles para el proyecto</label>
                 </div>
 
-                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow">
-                    <a href="Expectativas.html"
-                        class="text-light link-underline link-underline-opacity-0">Sigiente</a>
-                </button>
+                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow" id="btndisponibilidad">Sigiente</button>
             </div>
         </form>
     </div>
 
     <script src="Styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
 </body>
 
 </html>

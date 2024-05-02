@@ -12,7 +12,7 @@
 
 <body>
     <div class="container text-center mt-5">
-        <form action="">
+        <form action="Consentimiento.html" id="expectativas">
             <div class="row justify-content-start offset-md-3 pt-4 bg-dark-subtle w-50 shadow-lg">
                 <h2 class="col-md-6 offset-md-3 mx-auto mb-4 fw-bold border border-success border-3 bg-success-subtle w-75">
                     Expectativas
@@ -38,28 +38,26 @@
                 <div class="input-group">
                     <span class="input-group-text px-2 dollar ms-4">$</span>
                     <div class="form-floating col-md-11 offset-md-3 me-4 text-center">
-                        <input type="number" class="form-control mb-3 shadow" id="" placeholder="" required />
-                        <label for="" class="px-4">Expectativas salariales</label>
+                        <input type="number" class="form-control mb-3 shadow" id="salario" placeholder="" required/>
+                        <label for="salario" class="px-4">Expectativas salariales</label>
                     </div>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="text" class="form-control mb-3 shadow" id="" placeholder="" required />
-                    <label for="" class="px-4">Expectativas de roles y responsabilidades en el proyecto</label>
+                    <input type="text" class="form-control mb-3 shadow" id="roles" placeholder="" required/>
+                    <label for="roles" class="px-4">Expectativas de roles y responsabilidades en el proyecto</label>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <textarea class="form-control mb-3 shadow" placeholder="" cols="30" rows="10" style="height: 100px;"></textarea>
-                    <label for="" class="px-4">Cualquier comentario adicional relevante para la solicitud</label>
+                    <textarea class="form-control mb-3 shadow" placeholder="" cols="30" rows="10" style="height: 100px;" id="comentario_adicional"></textarea>
+                    <label for="comentario_adicional" class="px-4">Cualquier comentario adicional relevante para la solicitud</label>
                 </div>
 
-                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow">
-                    <a href="Consentimiento.html"
-                        class="text-light link-underline link-underline-opacity-0">Sigiente</a>
-                </button>
+                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow" id="btnexpectativas">Sigiente</button>
             </div>
         </form>
     </div>
 
     <script src="Styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
 </body>
 
 </html>

@@ -24,40 +24,28 @@
                 </nav>
 
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="text" class="form-control mb-3 shadow" id="nombre" placeholder="" required />
+                    <input type="text" class="form-control mb-3 shadow" id="nombre" placeholder="" />
                     <label for="nombre" class="px-4">Nombre completo</label>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="email" class="form-control mb-3 shadow" id="email" placeholder="" required />
+                    <input type="email" class="form-control mb-3 shadow" id="email" placeholder="" />
                     <label for="email" class="px-4">Correo</label>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="number" class="form-control mb-3 shadow" id="telefono" placeholder="" required />
+                    <input type="number" class="form-control mb-3 shadow" id="telefono" placeholder="" />
                     <label for="telefono" class="px-4">Telefono</label>
                 </div>
                 <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
-                    <input type="number" class="form-control mb-3 shadow" id="postal" placeholder="" />
+                    <input type="number" class="form-control mb-3 shadow" id="postal" placeholder=""/>
                     <label for="postal" class="px-4">Postal</label>
                 </div>
-                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow">Siguiente</button>
+                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow" id="btn_informacion_personal">Siguiente</button>
             </div>
         </form>
     </div>
 
     <script src="Styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script>
-        document.getElementById('informacion-personal').addEventListener('submit', function(event) {
-            var nombre = document.getElementById('nombre').value;
-            var email = document.getElementById('email').value;
-            var telefono = document.getElementById('telefono').value;
-            var postal = document.getElementById('postal').value;
-
-            if (!nombre || !email || !telefono) {
-                alert('Por favor, completa todos los campos obligatorios.');
-                event.preventDefault();
-            }
-        });
-    </script>
+    <script src="Scripts/scripts.js"></script>
 </body>
 
 </html>
