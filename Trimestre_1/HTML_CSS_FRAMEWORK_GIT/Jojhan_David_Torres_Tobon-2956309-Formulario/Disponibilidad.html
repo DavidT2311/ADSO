@@ -1,0 +1,60 @@
+<!--Desarrollado por Jojhan David Torres Tobon :)-->
+<!--Desarrollado por Jojhan David Torres Tobon :)-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <link rel="shortcut icon" href="Images/Sena.png" />
+    <title>Disponibilidad</title>
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <form action="Expectativas.html" id="disponibilidad">
+            <div class="row justify-content-start offset-md-3 pt-4 bg-dark-subtle w-50 shadow-lg">
+                <h2 class="col-md-6 offset-md-3 mx-auto mb-4 fw-bold border border-success border-3 bg-success-subtle w-75">
+                    Disponibilidad
+                </h2>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="text-success link-underline link-underline-opacity-0">Informacion personal</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="Experiencia_Educacion.html" class="text-success link-underline link-underline-opacity-0">Experiencia y educacion</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="Habilidades_Tecnicas.html" class="text-success link-underline link-underline-opacity-0">Habilidades tecnicas</a>
+                        </li>
+                        <li class="breadcrumb-item active text-success-emphasis">Disponibilidad</li>
+                    </ol>
+                </nav>
+
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="number" class="form-control mb-3 shadow" id="disponibilidad_semanal" placeholder=""/>
+                    <label for="disponibilidad_semanal" class="px-4">Disponibilidad semanal(Horas por semana)</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="date" class="form-control mb-3 shadow" id="fecha_inicio" placeholder=""/>
+                    <label for="fecha_inicio" class="px-4">Fecha de inicio disponibles para el proyecto</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="date" class="form-control mb-3 shadow" id="fecha_fin" placeholder=""/>
+                    <label for="fecha_fin" class="px-4">Fecha de finalizacion disponibles para el proyecto</label>
+                </div>
+
+                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow" id="btndisponibilidad">Sigiente</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/Disponibilidad.js"></script>
+</body>
+
+</html>
