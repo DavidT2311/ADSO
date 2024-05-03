@@ -1,66 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <title>Pagina principal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <link rel="shortcut icon" href="Images/Sena.png" />
+    <title>Informacion personal</title>
 </head>
+
 <body>
-    <header class="bg-primary p-0">
-        <h1 class="py-2 px-2 text-center">Hola, bienvenido</h1>
-    </header>
-    
-    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus veritatis delectus vel quis voluptatum consectetur, corporis eius exercitationem beatae recusandae! Doloribus nihil assumenda, nam iste sunt veniam commodi consequatur. <br><strong>Hola</strong><br>
-    <em>Hola</em></p>
+    <div class="container text-center mt-5">
+        <form action="Experiencia_Educacion.html" id="informacion_personal">
+            <div class="row justify-content-start offset-md-3 pt-4 bg-dark-subtle w-50 shadow-lg">
+                <h2 class="col-md-6 offset-md-3 mx-auto mb-4 fw-bold border border-success border-3 bg-success-subtle w-75">
+                    Informacion personal
+                </h2>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active text-success-emphasis">Informacion personal</li>
+                    </ol>
+                </nav>
 
-    <!--Imagenes-->
-    <img src="Images/1710444864130.jpg" alt="HTML"><br>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="text" class="form-control mb-3 shadow" id="nombre" placeholder="" />
+                    <label for="nombre" class="px-4">Nombre completo</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="email" class="form-control mb-3 shadow" id="email" placeholder="" />
+                    <label for="email" class="px-4">Correo</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="number" class="form-control mb-3 shadow" id="telefono" placeholder="" />
+                    <label for="telefono" class="px-4">Telefono</label>
+                </div>
+                <div class="form-floating col-md-11 offset-md-3 mx-4 text-center">
+                    <input type="number" class="form-control mb-3 shadow" id="postal" placeholder=""/>
+                    <label for="postal" class="px-4">Postal</label>
+                </div>
+                <button class="col-md-6 offset-md-3 btn btn-success btn-lg mt-5 mb-4 shadow" id="btn_informacion_personal">Siguiente</button>
+            </div>
+        </form>
+    </div>
 
-    <!--Enlaces-->
-    <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover px-5">¡Ingresa aqui!</a>
-
-    <h2>Lista ordenada</h2>
-    <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-    </ol>
-
-    <h2>Lista desordenada</h2>
-    <ul>
-        <td>Lista 1</td>
-        <dd>Elemento 1</dd>
-        <dd>Elemento 2</dd>
-        <dd>Elemento 3</dd>
-        <dd>Elemento 4</dd>
-        <td>Lista 2</td>
-        <dd>Elemento 5</dd>
-        <dd>Elemento 6</dd>
-        <dd>Elemento 7</dd>
-        <dd>Elemento 8</dd>
-    </ul>
-
-    <!--Tablas-->
-    <table class="table">
-        <tr class="table-active">
-            <th>Texto 1</th>
-            <th>Texto 2</th>
-            <th>Texto 3</th>
-            <th>Texto 4</th>
-            <th>Texto 5</th>
-        </tr>
-        <tr>
-            <th>Texto 6</th>
-            <th>Texto 7</th>
-            <th>Texto 8</th>
-            <th>Texto 9</th>
-            <th>Texto 10</th>
-        </tr>
-    </table>
-    
+    <script src="Styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/Informacion_Personal.js"></script>
 </body>
 
-<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </html>

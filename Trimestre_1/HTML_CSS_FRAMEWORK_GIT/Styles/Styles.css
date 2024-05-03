@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    --bs-breadcrumb-divider: '>';
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] {
+    appearance: none;
+    -moz-appearance:textfield; 
+}
+
+.dollar {
+    height: 58px;
+}
+
+.form-check-label , .form-check-input {
+    font-size: 18px;
+
+}
