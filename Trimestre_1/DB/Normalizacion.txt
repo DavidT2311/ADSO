@@ -1,0 +1,54 @@
+CREATE TABLE Pais (
+	CodPais int(10) PRIMARY KEY,
+    NombrePais varchar(250)
+);
+
+CREATE TABLE Ciudad (
+	CodCiudad int(10) PRIMARY KEY,
+    NombreCiudad varchar(250),
+    CodPais int(10),
+    FOREIGN KEY (CodPais) REFERENCES pais(CodPais)
+);
+
+CREATE TABLE clientes (
+	IDCliente varchar(10) PRIMARY KEY,
+    Nombre varchar(250),
+    Apellido varchar(250),
+    CodCiudad int(10),
+    FOREIGN KEY (CodCiudad) REFERENCES ciudad(CodCiudad)
+);
+
+CREATE TABLE Vendedores (
+	IDVendedor int(10) PRIMARY KEY,
+    NombreVendedor varchar(250)
+);
+
+CREATE TABLE Categorias (
+	IDCategoria int(10) PRIMARY KEY,
+    Categoria varchar(250)
+);
+
+CREATE TABLE productos (
+	CodProducto int(10) PRIMARY KEY,
+    NombreProducto varchar(250),
+    Precio varchar(250),
+    IDCategoria int(10),
+    FOREIGN KEY (IDCategoria) REFERENCES categorias(IDCategoria)
+);
+
+CREATE TABLE Pedidos (
+	NumeroPedido int(10) PRIMARY KEY,
+    FechaPedido date,
+    IDCliente varchar(10),
+    IDVendedor int(10),
+    FOREIGN KEY (IDCliente) REFERENCES clientes(IDCliente),
+    FOREIGN KEY (IDVendedor) REFERENCES vendedores(IDVendedor)
+);
+
+CREATE TABLE PedidosDos (
+    Cantidad int(10),
+	NumeroPedido int(10),
+    CodProducto int(10),
+    FOREIGN KEY (NumeroPedido) REFERENCES pedidos(NumeroPedido),
+    FOREIGN KEY (CodProducto) REFERENCES productos(CodProducto)
+);
