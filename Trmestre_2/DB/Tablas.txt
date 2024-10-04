@@ -1,0 +1,102 @@
+--CREACION DE LAS TABLAS DE LA BASE DE DATOS BIBLIOTECA
+
+
+INSERT INTO Clientes(Documento, Nombre, Apellido, Celular, Direccion)
+VALUES
+	(4613018343, 'Miller Thomas', 'Michael', '3848551007', '66736 James Squares Suite 126'),
+	(3143574370, 'Mendoza Chambers', 'Mary Teresa', '3056304723', '33538 Long Loaf'),
+	(4160032325, 'Allison Benitez', 'Kurt Denise', '3516075175', '4641 Melissa Run Apt. 505'),
+	(7044305806, 'Drake Guerrero', 'Kevin Kayla', '3755523154', '928 Andrew Streets Suite 229'),
+	(5201057808, 'Martinez Young', 'Andrew Jonathan','3672155807', '9770 Rachel Cove'),
+	(3503363681, 'Jarvis Bailey', 'Victor Melanie', '3700222685', '122 Cameron Lodge Apt. 473'),
+	(2302681237, 'Robinson Nichols', 'Paul Melissa', '3701240540', '935 White Manor Apt. 421'),
+	(0880752353, 'Phillips Gray', 'Andrew', '3715872011', '544 Johnson Lock Suite 056'),
+	(1262742772, 'Ingram Gonzalez', 'Diane', '3844163135', '83491 Silva Locks Suite 104'),
+	(0300000355, 'Sanders Yang', 'Jared Brian', '3704385117', '78602 Harris Glens Suite 242'),
+	(7150660240, 'Mann Wagner', 'Ernest Aaron', '3134577207', '00217 Grant Gateway'),
+	(0331346367, 'Mckinney Sanchez', 'Selena', '3311148575', '5174 Kenneth Skyway'),
+	(4023441407, 'Peterson White', 'Brittney Christopher', '3462155536', '57069 Rice Court Apt. 805'),
+	(2751034623, 'Thompson Strong', 'Phillip Eugene', '3361358722', '43530 Gregory Freeway Suite 556'),
+	(3561728135, 'Hopkins Calhoun', 'Krystal Patricia', '3523208412', '47643 Richardson Rest Apt. 740'),
+	(2411188245, 'Peters Foley', 'Brian', '3304057313', '48616 Cheryl Loop Apt. 691'),
+	(4483172805, 'Khan Morgan', 'Sarah', '3330756600', '63262 Stephens Flat Suite 867'),
+	(6806728263, 'Mcfarland Love', 'Amy Phillip', '3375414344', '9077 Jocelyn Mountains'),
+	(1285404330, 'Cooper Jones', 'Todd Adam', '3875881322', '1413 Williams Avenue Suite 512'),
+	(7235882823, 'Robinson Cunningham', 'Shaun', '3064388454', '2324 Michael Mission'),
+	(5646375663, 'Li Beltran', 'John Heather', '3662143727', '1041 Joseph View Apt. 122'),
+	(8313201407, 'Mccarthy Gonzalez', 'Gina James', '3480573721', '218 Christopher Estates'),
+	(8376776311, 'Payne Frost', 'Hannah', '3638140023', '2680 Joseph Summit'),
+	(6662115275, 'Griffith Bryant', 'Shaun', '3067127130', '66030 Kristina Ramp'),
+	(3037240445, 'Hopkins Page', 'Cheryl', '3743357317', '0015 Melissa Street Apt. 113'),
+	(5165277428, 'Ball Mendez', 'Alyssa', '3253348864', '0807 Moses Field Apt. 609'),
+	(8084151432, 'Butler Walls', 'James', '3663631538', '07463 Nicholas Shores'),
+	(4552685063, 'Wilson Villegas', 'David', '3325086247', '2788 Chad Union'),
+	(5085083726, 'Christensen Mason', 'Keith', '3347504827', '90792 Brenda Fort Suite 682'),
+	(3407527847, 'Adkins Underwood', 'Brooke Robert', '3283354880', '549 Mary Keys Apt. 174'),
+	(5056468832, 'Owens Vasquez', 'Danielle Laura', '3438170718', '966 Brandon Estate Apt. 506'),
+	(7435513582, 'Kerr Bauer', 'Susan Joseph', '3463374860', '7148 Lisa Parkway'),
+	(0120415171, 'Moore Carter', 'Elizabeth', '3343772785', '388 Ronald Gardens'),
+	(4077360606, 'Boyd Watts', 'Carolyn', '3406333244', '54286 Carlson Garden Apt. 406'),
+	(0138722681, 'Ho Pacheco', 'Ryan Mary', '3615243620', '10351 Harris Rue Apt. 192'),
+	(6434246355, 'Valdez Roberts', 'Roy', '3208063782', '630 Rose Pass'),
+	(0378851616, 'Jones Bryant', 'Eric', '3377827816', '82807 Lori Underpass Suite 239'),
+	(5112564446, 'James Howard', 'Michelle Richard', '3235051325', '04827 Reyes Street Suite 030'),
+	(5347684401, 'Lee Johnson', 'Patricia Alexandra', '3378338015', '4419 Torres Cove Suite 677'),
+	(3616235331, 'Wilson Porter', 'John', '3042616573', '0787 Carter Mountain Suite 632')
+GO
+
+
+
+
+
+--ACTUALIZAR DATOS
+ALTER TABLE Libros
+ADD Calificacion float
+GO
+
+UPDATE Libros 
+SET Calificacion = 4.4
+WHERE ID_Libro = 1
+UPDATE Libros
+SET Calificacion = 1.6
+WHERE ID_Libro = 2
+UPDATE Libros
+SET Calificacion = 1.5
+WHERE ID_Libro = 3
+UPDATE Libros
+SET Calificacion = 3.1
+WHERE ID_Libro = 4
+UPDATE Libros
+SET Calificacion = 2.2
+WHERE ID_Libro = 5
+UPDATE Libros
+SET Calificacion = 3.0
+WHERE ID_Libro = 6
+UPDATE Libros
+SET Calificacion = 5.0
+WHERE ID_Libro = 7
+UPDATE Libros 
+SET Calificacion = 2.7
+WHERE ID_Libro = 8
+UPDATE Libros
+SET Calificacion = 5.0
+WHERE ID_Libro = 9
+UPDATE Libros
+SET Calificacion = 1.5
+WHERE ID_Libro = 10
+UPDATE Libros
+SET Calificacion = 2.4
+WHERE ID_Libro = 11
+UPDATE Libros
+SET Calificacion = 3.7
+WHERE ID_Libro = 12
+UPDATE Libros
+SET Calificacion = 4.5
+WHERE ID_Libro = 13
+UPDATE Libros
+SET Calificacion = 3.5
+WHERE ID_Libro = 14
+UPDATE Libros
+SET Calificacion = 4.5
+WHERE ID_Libro = 15
+GO
